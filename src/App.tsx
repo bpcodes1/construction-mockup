@@ -162,6 +162,22 @@ export default function App() {
 
           </div>
 
+          {/* Marquee — sits directly below the video row */}
+          <div className="relative z-10 shrink-0 mt-3 overflow-hidden bg-white/5 border border-white/10 rounded-full py-3 md:py-5">
+            <div className="flex whitespace-nowrap animate-marquee">
+              {[...Array(10)].map((_, i) => (
+                <div key={i} className="flex items-center gap-4 md:gap-8 px-4 md:px-8">
+                  <div className="bg-brand-orange p-1.5 md:p-2 rounded-full">
+                    <ArrowUpRight className="w-4 h-4 md:w-6 md:h-6 text-white" />
+                  </div>
+                  <span className="text-white font-display font-bold text-2xl md:text-4xl uppercase tracking-tighter">
+                    Get Started
+                  </span>
+                </div>
+              ))}
+            </div>
+          </div>
+
           {/* Mobile Contact Us row */}
           <div className="flex md:hidden items-center justify-between mt-4 px-1">
             <div className="text-[9px] text-gray-500 uppercase tracking-widest leading-relaxed">
@@ -181,22 +197,6 @@ export default function App() {
 
         </div>
       </main>
-
-      {/* Marquee Footer */}
-      <div className="relative z-10 shrink-0 mt-3 md:mt-4 mb-3 md:mb-4 overflow-hidden bg-white/5 border border-white/10 rounded-full mx-6 md:mx-8 py-3 md:py-5">
-        <div className="flex whitespace-nowrap animate-marquee">
-          {[...Array(10)].map((_, i) => (
-            <div key={i} className="flex items-center gap-4 md:gap-8 px-4 md:px-8">
-              <div className="bg-brand-orange p-1.5 md:p-2 rounded-full">
-                <ArrowUpRight className="w-4 h-4 md:w-6 md:h-6 text-white" />
-              </div>
-              <span className="text-white font-display font-bold text-2xl md:text-4xl uppercase tracking-tighter">
-                Get Started
-              </span>
-            </div>
-          ))}
-        </div>
-      </div>
     </div>
   );
 }
