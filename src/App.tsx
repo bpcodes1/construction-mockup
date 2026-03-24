@@ -86,7 +86,7 @@ export default function App() {
           </div>
 
           {/* Video + Right Panel row */}
-          <div className="flex flex-row gap-3 md:gap-5 mt-3 md:mt-4 flex-1 min-h-0 md:max-h-[50vh]">
+          <div className="flex flex-row gap-3 md:gap-5 mt-3 md:mt-4 flex-1 min-h-0 lg:max-h-[50vh]">
 
             {/* Video card */}
             <motion.div
@@ -183,7 +183,7 @@ export default function App() {
       </main>
 
       {/* Marquee Footer */}
-      <div className="relative z-10 shrink-0 mt-3 md:mt-4 mb-3 md:mb-10 lg:mb-4 overflow-hidden bg-white/5 border border-white/10 rounded-full mx-6 md:mx-8 py-3 md:py-5">
+      <div className="relative z-10 shrink-0 mt-3 md:mt-4 mb-3 md:mb-4 overflow-hidden bg-white/5 border border-white/10 rounded-full mx-6 md:mx-8 py-3 md:py-5">
         <div className="flex whitespace-nowrap animate-marquee">
           {[...Array(10)].map((_, i) => (
             <div key={i} className="flex items-center gap-4 md:gap-8 px-4 md:px-8">
